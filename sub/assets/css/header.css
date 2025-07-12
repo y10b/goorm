@@ -1,0 +1,43 @@
+/* /css 폴더의 styles 중 header, nav 관련 스타일 분리 및 수정 */
+.main-header {
+    padding: 20px 40px 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header > h1 > a {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .main-header { 
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.header-image {
+    width: 4rem;
+    margin-left: 15px;
+}
+
+.header-nav {
+    height: 2rem;
+}
+
+.header-nav > ul {
+    display: flex;
+    gap: 40px;
+}
+
+.header-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.header-nav > ul> li > a > img{
+    width: 2rem;
+    height: 2rem;
+}
